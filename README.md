@@ -13,7 +13,11 @@ composer require k.kirillov/email-validator
 
 # Usage
 ```
-fetch album data:
+set valid hosts:
+$storage = new HostsStorage();
+$storage->set(['array', 'of', 'hosts'];
+
+validate email string:
 $validator = new EmailValidator();
 $validator->isValid('emailString'); // returns bool
 ```
